@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -34,17 +35,34 @@
   margin-top: 80px;
 } */
 
+body {
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  width: 183px;
+  background-repeat: no-repeat;
+}
+
 .logo_place_header {
   background: url(../images/logo_place_header.svg);
-  background-repeat: no-repeat;
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
 }
 
@@ -54,6 +72,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 96px;
   font-weight: 700;
   margin-left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -64,10 +83,10 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
+  z-index: 2;
 }
 
 .link {
-  text-decoration: none;
   color: #2f80ed;
 }
 
@@ -229,16 +248,8 @@ section.digits {
   z-index: 1;
 }
 
-.section-title_theme_dark {
+.section-title_theme_dark, .section-subtitle_theme_dark {
   color: #fff;
-}
-
-.section-subtitle_theme_dark {
-  color: #fff;
-}
-
-.table_theme_dark { 
-
 }
 
 .table__cell_theme_dark {
@@ -256,4 +267,64 @@ section.digits {
   top: 0;
   right: -210px;
   z-index: -1;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  padding: 60px 0 40px 0;
+}
+
+.logo_place_footer {
+  background: url(../images/logo_place_footer.svg);
+  height: 35px;
+}
+
+.footer__author {
+  padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer__columns {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__column-links {
+  margin: 20px 0 16px 0;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.link_centered {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
