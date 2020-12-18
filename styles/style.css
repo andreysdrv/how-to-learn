@@ -21,34 +21,6 @@
   overflow: hidden;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-/* .header__square-pic {
-  height: 568px;
-  width: 568px;
-} */
-
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 .logo {
   width: 183px;
   background-repeat: no-repeat;
@@ -63,6 +35,7 @@ ul {
 }
 
 .header__title {
+  margin: 0;
   width: 730px;
   font-size: 102px;
   line-height: 96px;
@@ -72,6 +45,7 @@ ul {
 }
 
 .header__subtitle {
+  margin: 0;
   position: absolute;
   width: 388px;
   bottom: 30px;
@@ -82,8 +56,15 @@ ul {
   z-index: 2;
 }
 
-.link {
+.header__link {
   color: #2f80ed;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.header__link:hover {
+  opacity: .5;
+  transition: .15s;
 }
 
 .header__main-illustration {
@@ -118,7 +99,8 @@ ul {
   justify-content: space-between;
 }
 
-.two-columns__brif {
+.two-columns__brief {
+  margin: 0;
   width: 175px;
   color: #2f80ed;
   line-height: 1.2;
@@ -132,6 +114,7 @@ ul {
 }
 
 .two-columns__paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
@@ -148,7 +131,7 @@ ul {
   font-weight: 700;
 }
 
-section.digits {
+.digits {
   margin-top: 100px;
 }
 
@@ -184,12 +167,14 @@ section.digits {
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
 .table__text {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -206,34 +191,43 @@ section.digits {
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 650px;
+  min-height: 790px;
   padding-top: 100px;
   margin-top: 100px;
 }
 
 .feynman__title {
   width: 648px;
-  margin: 0 auto;
+  margin: 100px auto 70px auto;
   line-height: 1.1;
   font-size: 120px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 70px;
 }
 
 .feynman__subtitle {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
 }
 
 .feynman__link {
+  text-decoration: none;
+  color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
   position: absolute;
-  right: 40px;
+  right: 48px;
   top: 50%;
+  /*В макете указано, что ссылка может располагаться не на одном уровне с подзаголовком; остальное касательно высоты блока и ссылки исправил*/
+  opacity: 1;
+}
+
+.feynman__link:hover {
+  opacity: .5;
+  transition: .15s;
 }
 
 .kaufman {
@@ -268,6 +262,9 @@ section.digits {
 .footer {
   background-color: #1f1f1f;
   padding: 60px 0 40px 0;
+  min-height: 350px;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .logo_place_footer {
@@ -276,6 +273,7 @@ section.digits {
 }
 
 .footer__author {
+  margin: 0;
   padding: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -291,13 +289,17 @@ section.digits {
 }
 
 .footer__column {
-  flex-basis: 711px;
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
   justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -306,17 +308,24 @@ section.digits {
 
 .footer__column-links {
   margin: 20px 0 16px 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer__column-link {
+  text-decoration: none;
+  color: #fff;
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-}
-
-.link_centered {
   display: flex;
   align-items: center;
+  opacity: 1;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
+  transition: .15s;
 }
 
 .footer__social-icon {
