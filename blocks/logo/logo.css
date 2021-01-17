@@ -2,3 +2,8 @@
   width: 183px;
   background-repeat: no-repeat;
 }
+
+.logo:hover {
+  opacity: .5;
+  transition: .15s;
+}
