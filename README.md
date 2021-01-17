@@ -12,7 +12,6 @@
 ## Планы по доработке
 * Адаптировать сайт для разных девайсов.
 
-## Ссылка на проект
-[Научиться учиться](https://totalretard.github.io/how-to-learn/)
+[Ссылка на проект](https://totalretard.github.io/how-to-learn/)
 
 ---
