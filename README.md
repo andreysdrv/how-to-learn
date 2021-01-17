@@ -13,6 +13,6 @@
 * Адаптировать сайт для разных девайсов.
 
 ## Ссылка на проект
-https://totalretard.github.io/how-to-learn/
+[Научиться учиться](https://totalretard.github.io/how-to-learn/)
 
 ---
