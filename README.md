@@ -13,6 +13,6 @@
 ## Планы по доработке
 * Адаптировать сайт для разных девайсов.
 
-[Ссылка на проект](https://totalretard.github.io/how-to-learn/)
+[Ссылка на проект](https://andreysdrv.github.io/how-to-learn/)
 
 ---
